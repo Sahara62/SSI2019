@@ -1,0 +1,152 @@
+﻿%
+% 計測自動制御学会システム・情報部門学術講演会2013原稿サンプルファイル
+%                                           August 26, 2013
+% 計測自動制御学会システム・情報部門学術講演会2011原稿サンプルファイル
+%                                           April 28, 2011
+% Based on 第7回計測自動制御学会制御部門大会原稿サンプルファイル
+%                                           October 18, 2007
+% Based on 第5回計測自動制御学会制御部門大会原稿サンプルファイル
+%            近野敦 konno@space.mech.tohoku.ac.jp    March 05, 2005
+%
+% LaTeX2eとLaTeX209判別のための定義（以下3行）は科研費マクロkkhgrp.mac
+% の定義を，作者の金沢大学青木先生の許可を得て利用させていただきました．
+%
+\newif\ifLaTeXe\LaTeXefalse
+\expandafter\ifx\csname PackageError\endcsname\relax\LaTeXefalse
+\else\LaTeXetrue\fi
+
+\ifLaTeXe
+  \documentclass{jarticle}
+  \usepackage{SICE-SSI}
+  \usepackage[dvips]{graphicx}
+\else
+  \documentstyle[SICE-SSI,epsbox]{jarticle}
+\fi
+
+\begin{document}
+\title{SICE システム・情報部門 学術講演会 2015 サンプル原稿\thanks
+{本研究は○○で発表したものである．}}
+\author{○システム太郎\ \ 情報花子\ （××大学）}
+
+\abstract{
+  この原稿のサンプルには，SSI2015 の原稿執筆およびアップロードにおける注意が
+  記されています．
+  電子投稿システムではPDFファイルのみ受け付けます．
+  }
+
+\keyword{電子投稿方法，原稿書式}
+
+\maketitle\thispagestyle{empty}
+\pagestyle{empty}
+
+\section{原稿の投稿方法}
+
+計測自動制御学会 システム・情報部門 学術講演会 2015 (SSI2015) では，
+原稿をPDFでご用意いただき，
+大会のホームページ\cite{大会ホームページ}からアップロードしていただきます．
+使用言語は日本語または英語です．
+
+\section{テンプレートファイルのダウンロード}
+
+SSI2015のホームページ\cite{大会ホームページ}
+からテンプレートファイルをダウンロードします．pLaTeX2.09またはpLaTeX2e
+を使用される場合は，SICE-SSI.styとsample.texの二つのファイルをダウンロ
+ードしてください．sample.texはpLaTeX2eとpLaTeX2.09のどちらでもコンパイ
+ルすることができます．SICE-SSI.styとsample.texはUTF8版，SJIS版，EUC版の3種類を
+用意しましたので，それぞれの環境に応じてダウンロードするファイルを選択
+してください．Microsoft Word（以下MS-Wordと略す）を使用される場合は，
+template.docをダウンロードし，原稿を作成してください．それ以外のワード
+プロセッサをご使用の方は，sample.pdfをダウンロードし，原稿の体裁がなるべ
+くサンプルと近くなるよう原稿を作成ください．
+
+\section{原稿の体裁}
+
+原稿は1ページ以上6ページ以下です．
+アップロードするファイルサイズに特に制限は設けませんが，
+あまりに巨大である場合，ファイルサイズの縮小をお願いする場合があります．
+
+\subsection{全体の体裁}
+
+A4用紙の（US Letterは不可），縦250 mm，横170 mmの枠内に収まるようにし
+てください．余白は，上20 mm，下27 mm，左20 mm，右20 mmとします．活字の
+大きさは，題目16ポイント，著者名と所属12ポイント，概要とキーワード9ポイ
+ント，章タイトル11ポイント，節タイトル10ポイント，本文の活字10ポイント，
+参考文献9ポイントを目安としてください．原稿は，
+%
+\begin{itemize}
+  \setlength{\topsep}{0pt}
+  \setlength{\partopsep}{0pt}
+  \setlength{\itemsep}{0pt}
+  \setlength{\parsep}{0pt}
+  \setlength{\parskip}{1pt plus 1pt minus 1pt}
+  \item 題目
+  \item 著者名（登壇者に○印）と所属
+  \item 概要
+  \item キーワード
+  \item 本文，参考文献
+\end{itemize}
+%
+の順に書いてください．キーワードまでを1段組，本文・参考文献を2段組にしてください． 
+
+\subsection{図と表}
+
+\begin{figure}[t]
+  \centering
+\ifLaTeXe
+  \includegraphics[width=0.5\linewidth]{fig1}
+\else
+  \psbox[width=0.55\linewidth]{fig1}
+\fi
+  \caption{A sample figure.}
+  \label{fig:samplefig}
+\end{figure}
+
+図と表は，Fig.~1，Table~1のように番号を振り
+（Fig.~\ref{fig:samplefig}\ 参照），図説，図中の
+説明文は英文で記入してください．本文で引用する場合も「Fig.~1に示す」な
+どのようにFig.とTableを使用してください．
+
+図や表中の文字は小さくなりすぎないよう気をつけてください．PDF原稿を作
+成する際，図の画質が落ちないよう，注意してください．特にMicrosoft Word
+などで原稿を作成する際，JPEG画像を貼り付けると，一度圧縮されている画像
+が再圧縮されるので画像が劣化するようです．貼り付ける画像は，画質の良い
+（圧縮率の低い）画像を用いるか圧縮しない画像フォーマットを選ぶなど，各
+自工夫し，最終的なPDFファイルにおいて画像が劣化しないよう注意してくだ
+さい．
+
+\subsection{参考文献}
+
+文献の引用は本文中に\cite{大会ホームページ}のように書き，本文の最後に
+まとめて記述します．次のフォーマットを推奨します．
+
+\noindent
+(a) 雑誌論文の場合
+
+\noindent
+番号)  著者：論文題目，雑誌名，巻（太字）-号，始ページ/終ページ（年）
+
+\noindent
+(b) 単行本の場合
+
+\noindent
+番号)  著者：書名，始ページ/終ページ，発行所（発行年）
+
+なお，本研究が他学会で発表済みの内容の場合，その文献を参考文献に挙げるとともに，脚注で明示して下さい．
+
+\small
+\begin{thebibliography}{10}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\bibitem{大会ホームページ}
+{\tt http://www.sice.or.jp/org/SSI2015/}
+
+\bibitem{原稿執筆の手引き}
+松野，中野：第7回計測自動制御学会制御部門大会サンプル原稿，
+第7回計測自動制御学会制御部門大会予稿集，1/4（2007）
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{thebibliography}
+\normalsize
+
+\end{document}
