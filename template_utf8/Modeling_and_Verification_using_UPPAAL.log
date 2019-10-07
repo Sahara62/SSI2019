@@ -1,10 +1,10 @@
-This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.10.18)  7 OCT 2019 20:19
+This is e-pTeX, Version 3.14159265-p3.8.1-180226-2.6 (utf8.euc) (TeX Live 2018) (preloaded format=platex 2018.10.18)  7 OCT 2019 20:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**sample.tex
-(./sample.tex
+**Modeling_and_Verification_using_UPPAAL.tex
+(./Modeling_and_Verification_using_UPPAAL.tex
 pLaTeX2e <2018-07-28>+1 (based on LaTeX2e <2018-04-01> patch level 5)
 (/usr/local/texlive/2018/texmf-dist/tex/platex/base/jarticle.cls
 Document Class: jarticle 2018/07/03 v1.8 Standard pLaTeX class
@@ -56,8 +56,8 @@ File: dvipdfmx.def 2017/06/24 v5.0g Graphics/color driver for dvipdfmx
 \Gin@req@height=\dimen121
 \Gin@req@width=\dimen122
 )
-(./sample.aux)
-\openout1 = `sample.aux'.
+(./Modeling_and_Verification_using_UPPAAL.aux)
+\openout1 = `Modeling_and_Verification_using_UPPAAL.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
 LaTeX Font Info:    ... okay on input line 27.
@@ -122,14 +122,15 @@ File: TAuto.png Graphic file (type bmp)
 <TAuto.png>
 File: dArr.png Graphic file (type bmp)
 <dArr.png>
-[2] [3] (./sample.aux) ) 
+[2] [3] (./Modeling_and_Verification_using_UPPAAL.aux) ) 
 Here is how much of TeX's memory you used:
  737 strings out of 493248
- 9078 string characters out of 6144401
+ 9366 string characters out of 6144401
  78708 words of memory out of 5000000
  4728 multiletter control sequences out of 15000+600000
  13455 words of font info for 53 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 25i,4n,22p,555b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 25i,4n,22p,587b,306s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on sample.dvi (3 pages, 21180 bytes).
+Output written on Modeling_and_Verification_using_UPPAAL.dvi (3 pages, 21180 by
+tes).
